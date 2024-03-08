@@ -1,0 +1,75 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="200dp"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <Button
+            android:id="@+id/closeButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?android:attr/selectableItemBackground"
+            android:drawableRight="@drawable/close"
+            android:layout_gravity="right"
+            android:contentDescription="Close" />
+
+        <ImageView
+            android:id="@+id/bubble_image"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:scaleType="centerCrop"
+            android:layout_gravity="center_horizontal"
+            android:contentDescription="Place Image"
+            android:background="@color/black"/>
+
+        <TextView
+            android:id="@+id/bubble_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="16dp"
+            android:singleLine="false"
+            android:maxLines="10"
+            android:ellipsize="none"/>
+
+        <Button
+            android:id="@+id/wikipediaButton"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:text="Web"
+            android:drawableLeft="@drawable/web"
+            android:textColor="@color/black"
+            android:layout_marginTop="16dp"
+            android:layout_gravity="center_horizontal"/>
+
+        <Button
+            android:id="@+id/navigationButton"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:text="Nav"
+            android:textColor="@color/black"
+            android:drawableLeft="@drawable/google_maps"
+            android:layout_marginTop="8dp"
+            android:layout_gravity="center_horizontal"/>
+
+        <Button
+            android:id="@+id/shareButton"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:text="Share"
+            android:textColor="@color/black"
+            android:drawableLeft="@drawable/share_variant"
+            android:layout_marginTop="8dp"
+            android:layout_gravity="center_horizontal"/>
+
+    </LinearLayout>
+
+</FrameLayout>
+

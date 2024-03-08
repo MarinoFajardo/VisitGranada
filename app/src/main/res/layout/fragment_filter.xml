@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/text_lugar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tipo de Lugar:"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:id="@+id/categorias_linear_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:orientation="vertical">
+
+        <CheckBox
+            android:id="@+id/checkbox_arch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/castle"
+            android:text="   Arquitectura" />
+
+        <CheckBox
+            android:id="@+id/checkbox_cultural"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/library"
+            android:text="   Cultural" />
+
+        <CheckBox
+            android:id="@+id/checkbox_historic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/temple_buddhist"
+            android:text="   Histórico" />
+
+        <CheckBox
+            android:id="@+id/checkbox_industrial"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/factory"
+            android:text="   Industrial" />
+
+        <CheckBox
+            android:id="@+id/checkbox_natural"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/pine_tree"
+            android:text="   Natural" />
+
+        <CheckBox
+            android:id="@+id/checkbox_religion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/church"
+            android:text="   Religión" />
+
+        <CheckBox
+            android:id="@+id/checkbox_otros"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/city"
+            android:text="   Otros" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp">
+        <Button
+            android:id="@+id/btn_apply"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:text="Aplicar Filtro" />
+
+        <Button
+            android:id="@+id/btn_cancel"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:text="Limpiar Filtro"
+            android:layout_marginLeft="10dp"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>
